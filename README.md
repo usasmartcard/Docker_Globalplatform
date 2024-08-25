@@ -10,7 +10,6 @@ A docker environment to develop and install applets to a JavaCard.
 ```bash
 $sudo docker pull Usasmartcard/Docker_Globalplatform
 ```
-
 ### Building the Docker image locally
 ```bash
 $git clone https://github.com/usasmartcard/Docker_Globalplatform/
@@ -25,6 +24,11 @@ $sudo systemctl stop pcscd pcscd.socket
 ## Quick Start
 ```bash
 $sudo docker run -ti --rm  --device /dev/bus/usb Usasmartcard/Docker_Globalplatform
+```
+## Test Reader & Card
+```bash
+pcsc_scan
+opensc-tool -l
 ```
 
 ## What is installed?
