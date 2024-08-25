@@ -13,7 +13,8 @@ $sudo docker pull Usasmartcard/Docker_Globalplatform
 
 ### Building the Docker image locally
 ```bash
-$
+$git clone https://github.com/usasmartcard/Docker_Globalplatform/
+$cd Docker_Globalplatform
 $sudo docker build . -t Usasmartcard/Docker_Globalplatform
 ```
 ### Host Machine stop pcscd service
