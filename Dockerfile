@@ -11,9 +11,9 @@ RUN apt-get -y update &&\
         /var/tmp/*
 ADD javacard /opt/javacard
 
-ENV JC_HOME /opt/javacard
+ENV JC_HOME=/opt/javacard
 
-ENV JC_PATH $JC_HOME/lib/
+ENV JC_PATH=$JC_HOME/lib/
 
 RUN echo 'alias ll="ls -la"' >> ~/.bashrc
 
