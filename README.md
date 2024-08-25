@@ -8,13 +8,13 @@ A docker environment to develop and install applets to a JavaCard.
 ## Obtaing this Docker image
 ### Pulling from the Docker Hub
 ```bash
-$sudo docker pull Usasmartcard/Docker_Globalplatform
+$sudo docker pull usasmartcard/globalplatform
 ```
 ### Building the Docker image locally
 ```bash
 $git clone https://github.com/usasmartcard/Docker_Globalplatform/
 $cd Docker_Globalplatform
-$sudo docker build . -t Usasmartcard/Docker_Globalplatform
+$sudo docker build . -t usasmartcard/globalplatform
 ```
 ### Host Machine stop pcscd service
 ```bash
@@ -23,7 +23,7 @@ $sudo systemctl stop pcscd pcscd.socket
 ```
 ## Quick Start
 ```bash
-$sudo docker run -ti --rm  --device /dev/bus/usb Usasmartcard/Docker_Globalplatform
+$sudo docker run -ti --rm  --device /dev/bus/usb usasmartcard/globalplatform
 ```
 ## Test Reader & Card
 ```bash
@@ -39,6 +39,10 @@ gp -list
 ```bash
 gp -uninstall /opt/javacard/helloworld.cap
 gp -install /opt/javacard/helloworld.cap
+```
+## Globalplatform Hello World
+```bash
+opensc-tool -s "00 A4 04 00 07 D0 D1 D2 D3 D4 D5 01" -s "00:CB:3F:FF:05:5C:03:5F:C1:02:00"
 ```
 ## What is installed?
 This docker have instaled and configured the Java Card Development Kit 2.2.2, the pcsc lite to be able to comunicate directly with a smart card, the openjdk version 8, apache ant and the OpenSC.
