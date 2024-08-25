@@ -1,13 +1,13 @@
 # Docker for GlobalPlatformPro
 ### Pulling from the Docker Hub
 ```bash
-$sudo docker pull usasmartcard/globalplatform
+$sudo docker pull sonnyyu/globalplatform:latest
 ```
 ### Building the Docker image locally
 ```bash
 $git clone https://github.com/usasmartcard/Docker_Globalplatform/
 $cd Docker_Globalplatform
-$sudo docker build . -t usasmartcard/globalplatform
+$sudo docker build . -t sonnyyu/globalplatform
 ```
 ### Stop pcscd service at Host Machine
 ```bash
