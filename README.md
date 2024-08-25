@@ -16,7 +16,7 @@ $git clone https://github.com/usasmartcard/Docker_Globalplatform/
 $cd Docker_Globalplatform
 $sudo docker build . -t usasmartcard/globalplatform
 ```
-### Host Machine stop pcscd service
+### Stop pcscd service at Host Machine
 ```bash
 $sudo systemctl status pcscd.service pcscd pcscd.socket
 $sudo systemctl stop pcscd pcscd.socket
