@@ -19,4 +19,5 @@ RUN echo 'alias ll="ls -la"' >> ~/.bashrc
 
 RUN echo '#!/bin/sh\njava -jar $JC_HOME/gp.jar "$@"'> gp && chmod +x gp && mv gp /usr/bin
 
-CMD service pcscd start && bash
+#CMD service pcscd start && bash
+CMD ["pcscd","-f","-i"]
