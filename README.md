@@ -35,11 +35,14 @@ opensc-tool -l
 gp -info
 gp -list
 ```
-
+## Globalplatform Install Applet
+```bash
+gp -uninstall /opt/javacard/helloworld.cap
+gp -install /opt/javacard/helloworld.cap
+```
 ## What is installed?
 This docker have instaled and configured the Java Card Development Kit 2.2.2, the pcsc lite to be able to comunicate directly with a smart card, the openjdk version 8, apache ant and the OpenSC.
 ### List of software:
-
 * Openjdk version 11
 * Pcsc lite
 * GlobalPlatformPro
