@@ -43,6 +43,13 @@ gp -install /opt/javacard/helloworld.cap
 ## Globalplatform Hello World
 ```bash
 opensc-tool -s "00 A4 04 00 07 D0 D1 D2 D3 D4 D5 01" -s "00:CB:3F:FF:05:5C:03:5F:C1:02:00"
+Using reader with a card: Gemalto PC Twin Reader 00 00
+Sending: 00 A4 04 00 07 D0 D1 D2 D3 D4 D5 01
+Received (SW1=0x90, SW2=0x00):
+48 65 6C 6C 6F 20 57 6F 72 6C 64 21 Hello World!
+Sending: 00 CB 3F FF 05 5C 03 5F C1 02 00
+Received (SW1=0x90, SW2=0x00):
+48 65 6C 6C 6F 20 57 6F 72 6C 64 21 Hello World!
 ```
 ## What is installed?
 This docker have instaled and configured the Java Card Development Kit 2.2.2, the pcsc lite to be able to comunicate directly with a smart card, the openjdk version 8, apache ant and the OpenSC.
