@@ -15,9 +15,14 @@ $ docker pull Usasmartcard/Docker_Globalplatform
 ```bash
 $ docker build . -t Usasmartcard/Docker_Globalplatform
 ```
+### Host Machine stop pcscd service
+```bash
+systemctl status pcscd.service pcscd pcscd.socket
+systemctl stop pcscd pcscd.socket
+```
 ## Quick Start
 ```
-$ docker run -ti --rm  --device /dev/bus/usb cirne/javacard-great-again
+$ docker run -ti --rm  --device /dev/bus/usb Usasmartcard/Docker_Globalplatform
 ```
 
 ## What is installed?
