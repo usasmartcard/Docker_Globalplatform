@@ -45,5 +45,4 @@ Received (SW1=0x90, SW2=0x00):
 48 65 6C 6C 6F 20 57 6F 72 6C 64 21 Hello World!
 ```
 
-### Notes
 
