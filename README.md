@@ -30,6 +30,11 @@ $sudo docker run -ti --rm  --device /dev/bus/usb Usasmartcard/Docker_Globalplatf
 pcsc_scan
 opensc-tool -l
 ```
+## Globalplatform Info&List
+```bash
+gp -info
+gp -list
+```
 
 ## What is installed?
 This docker have instaled and configured the Java Card Development Kit 2.2.2, the pcsc lite to be able to comunicate directly with a smart card, the openjdk version 8, apache ant and the OpenSC.
