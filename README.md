@@ -8,21 +8,22 @@ A docker environment to develop and install applets to a JavaCard.
 ## Obtaing this Docker image
 ### Pulling from the Docker Hub
 ```bash
-$ docker pull Usasmartcard/Docker_Globalplatform
+$sudo docker pull Usasmartcard/Docker_Globalplatform
 ```
 
 ### Building the Docker image locally
 ```bash
-$ docker build . -t Usasmartcard/Docker_Globalplatform
+$
+$sudo docker build . -t Usasmartcard/Docker_Globalplatform
 ```
 ### Host Machine stop pcscd service
 ```bash
-systemctl status pcscd.service pcscd pcscd.socket
-systemctl stop pcscd pcscd.socket
+$sudo systemctl status pcscd.service pcscd pcscd.socket
+$sudo systemctl stop pcscd pcscd.socket
 ```
 ## Quick Start
-```
-$ docker run -ti --rm  --device /dev/bus/usb Usasmartcard/Docker_Globalplatform
+```bash
+$sudo docker run -ti --rm  --device /dev/bus/usb Usasmartcard/Docker_Globalplatform
 ```
 
 ## What is installed?
