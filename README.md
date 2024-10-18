@@ -14,6 +14,7 @@ $sudo docker build . -t sonnyyu/globalplatform
 ```bash
 $sudo systemctl status pcscd.service pcscd pcscd.socket
 $sudo systemctl stop pcscd pcscd.socket
+$sudo systemctl disable  pcscd pcscd.socket
 ```
 ## Quick Start
 ```bash
