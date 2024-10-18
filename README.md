@@ -4,6 +4,7 @@
 $sudo docker pull sonnyyu/globalplatform:latest
 ```
 ### Building the Docker image locally
+https://docs.docker.com/engine/install/ubuntu/
 ```bash
 $git clone https://github.com/usasmartcard/Docker_Globalplatform/
 $cd Docker_Globalplatform
