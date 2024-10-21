@@ -1,14 +1,18 @@
 # Docker for GlobalPlatformPro
+###Install Docker Engine on Ubuntu
+```bash
+[$sudo docker pull sonnyyu/globalplatform:latest](https://docs.docker.com/engine/install/ubuntu/)
+```
 ### Pulling from the Docker Hub
 ```bash
 $sudo docker pull sonnyyu/globalplatform:latest
 ```
 ### Building the Docker image locally
-https://docs.docker.com/engine/install/ubuntu/
+//https://docs.docker.com/engine/install/ubuntu/
 ```bash
-$git clone https://github.com/usasmartcard/Docker_Globalplatform/
-$cd Docker_Globalplatform
-$sudo docker build . -t sonnyyu/globalplatform
+//$git clone https://github.com/usasmartcard/Docker_Globalplatform/
+//$cd Docker_Globalplatform
+//$sudo docker build . -t sonnyyu/globalplatform
 ```
 ### Stop pcscd service at Host Machine
 ```bash
