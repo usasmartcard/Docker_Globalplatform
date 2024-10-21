@@ -1,7 +1,7 @@
 # Docker for GlobalPlatformPro
 ###Install Docker Engine on Ubuntu
 ```bash
-[$sudo docker pull sonnyyu/globalplatform:latest](https://docs.docker.com/engine/install/ubuntu/)
+https://docs.docker.com/engine/install/ubuntu/
 ```
 ### Pulling from the Docker Hub
 ```bash
